@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'instagram/index'
+  get 'home/index'
 
   root 'instagram#index'
 

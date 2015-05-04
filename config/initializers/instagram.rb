@@ -1,4 +1,4 @@
-require “instagram”
+require "instagram"
 
 Instagram.configure do |config|
 
