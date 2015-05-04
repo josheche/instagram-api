@@ -45,3 +45,5 @@ end
 
 # gem 'httparty'
 gem 'instagram'
+
+gem 'omniauth', '~> 1.2.2'
