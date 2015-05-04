@@ -1,2 +1,10 @@
-<h1>Home#index</h1>
+<a href="/oauth/connect">Connect with Instagram</a>
+
+<h1>Instagram</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<% @instagram.each do |instagram| %>
+
+  <%= image_tag instagram.images.standard_resolution.url %>
+
+  <% end %>
