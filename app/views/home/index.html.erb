@@ -1,10 +1,13 @@
-<a href="/oauth/connect">Connect with Instagram</a>
-
 <h1>Instagram</h1>
 <p>Find me in app/views/home/index.html.erb</p>
 
-<% @instagram.each do |instagram| %>
-
-  <%= image_tag instagram.images.standard_resolution.url %>
-
+<% @tag_result['data'].each do |result| %>
+  <% if result['type'] == ['video'] %>
+    <video src="<%= result['videos']['standard_resolution']['url'] %>" controls=true></video>
+  <% else %>
+   <img src="<%= result['images']['standard_resolution']['url'] %>">
   <% end %>
+<% end %>
+<!--
+<%= debug(@tag_result) %>
+ -->

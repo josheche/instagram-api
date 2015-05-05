@@ -44,6 +44,10 @@ group :development, :test do
 end
 
 # gem 'httparty'
-gem 'instagram'
+# gem 'instagram'
 
-gem 'omniauth', '~> 1.2.2'
+# gem 'omniauth', '~> 1.2.2'
+
+gem 'rest-client', '~> 1.8.0'
+
+gem 'better_errors', '~> 2.1.1'
