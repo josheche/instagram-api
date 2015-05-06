@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'home/debug'
+
+  get 'home/:tag' => 'home#show', as: :hashtag
+
+  # get 'home/wyncode'
+
+  # get 'home/miamitech'
+
+  # get 'home/emerge15'
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

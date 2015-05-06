@@ -1,0 +1,19 @@
+<h1>#miamitech</h1>
+
+<% @miamitech_tag['data'].each do |result| %>
+  <% if result['type'] == ['video'] %>
+    <video controls>
+      <source src="<%= result['videos']['standard_resolution']['url'] %>">
+    </video>
+  <% else %>
+   <img src="<%= result['images']['standard_resolution']['url'] %>">
+  <% end %>
+<% end %>
+
+
+
+
+
+<!--
+<%= debug(@tag_result) %>
+ -->
