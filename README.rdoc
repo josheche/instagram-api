@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails app that gets image and video data from an endpoint provided by the Instagram API.
 
-Things you may want to cover:
+Details:
+* ruby version 2.2.2
+* rails version 4.2.1
 
-* Ruby version
+<b>gem dependencies:</b> 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  'gem rest-client'       #for get put post delete requests/interacting with API
+  
+  'gem pg'                #for database
+  
+  'gem rails_12factor'    #helps pg
