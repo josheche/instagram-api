@@ -1,5 +1,5 @@
-<h1>highly reccomended</h1>
+<h1>#WYNNING</h1>
 
 <% %w{miamitech wyncode emerge15}.each do |tag| %>
-  <%= link_to "##{tag}", hashtag_path(tag) %>
+  <%= button_to "##{tag}", hashtag_path(tag), :class => "button", :method => :get %>
 <% end %>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'home/debug'
+  get 'home/debug', as: :debug
 
   get 'home/:tag' => 'home#show', as: :hashtag
 
