@@ -3,8 +3,10 @@ class HomeController < ApplicationController
   end
 
   def show
-    @response = RestClient.get "https://api.instagram.com/v1/tags/#{params[:tag]}/media/recent?client_id=2efdf3b1eb284e4588d2ce7fad2c0f0c"
-    @tags = JSON.parse(@response)
+    instagram = InstagramAPI.new(params[:tag])
+
+    @first_image_url = instagram.first_image_url
+    @medias = instagram.get_media
   end
 
   # def miamitech
