@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.animate, .btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after, .btn-border-rev-o:before, .btn-border-rev-o:after, .btn-border-rev:before, .btn-border-rev:after, .btn-fill-vert-o:before, .btn-fill-vert-o:after, .btn-fill-vert:before, .btn-fill-vert:after, .btn-fill-horz-o:before, .btn-fill-horz-o:after, .btn-fill-horz:before, .btn-fill-horz:after {
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.btn {
+  display: inline-block;
+  line-height: 35px;
+  margin: 8px;
+  padding: 0 15px;
+  font-size: 15px;
+  position: relative;
+  opacity: .999;
+  border-radius: 3px;
+}
+.btn-fill-horz-o {
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+  color: #B8B8B8;
+  overflow: hidden;
+}
+.btn-fill-horz-o:before, .btn-fill-horz-o:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.btn-fill-horz-o:before {
+  left: 50%;
+}
+.btn-fill-horz-o:after {
+  right: 50%;
+}
+.btn-fill-horz-o:hover {
+  color: #fff;
+}
+.btn-fill-horz-o:hover:before, .btn-fill-horz-o:hover:after {
+  width: 50%;
+  opacity: 1;
+}
+.btn-fill-horz-o.btn-blue:before, .btn-fill-horz-o.btn-blue:after {
+  background-color: #141414;
+}
+.btn-fill-horz-o.btn-blue:hover {
+  border-color: #141414;
+}
+
