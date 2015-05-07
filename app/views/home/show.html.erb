@@ -13,7 +13,8 @@
 
 
 <% end %>
-
+<head><link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="imgpage.css"></head>
 
   <div class="container">
     <div class="leftbar">
@@ -26,15 +27,19 @@
       <p class="suptag">#OTHERHASHTAG</p>
       <div class="addressbottom"></div>
     </div>
+    
     <div class="rightbar">
-       <img class="bigpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" >
+       <img src="<% @tags['data'].each do |result| %>
+        <% if result['type'] == ['video'] %>
+          <video controls>
+            <source src='<%= result['videos']['standard_resolution']['url'] %>''>
+          </video>
+        <% else %>
 
-       <div class="smallbar">
+          <img src='<%= result['images']['standard_resolution']['url'] %>''>
 
-       <img class="smallpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" ><img class="smallpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" ><img class="smallpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" >
+      <% end %> >"
 
-       </div>
-    </div>
   </div>
 
 
