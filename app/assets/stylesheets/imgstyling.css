@@ -86,8 +86,9 @@ h1 {
 }
 
 footer {
-text-align:center;
-position: relative;}
+	text-align:center;
+	position: relative;
+}
 
 
 
@@ -99,11 +100,18 @@ position: relative;}
 .smallpic {
 	width: 180px;
 	display: inline-block;
-	padding: 20px;
+	padding: 14px;
 }
 
 .smallbar {
-	display: block;
+  width: 637px;
+  margin: 0 auto;
+  display: block;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 200px;
+  white-space: nowrap;
+
 }
 
 /*This is the end of the left hashtag bar*/
