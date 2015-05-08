@@ -5,6 +5,8 @@
 }
 body {
 	margin:0 auto;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 header {
@@ -17,6 +19,7 @@ header {
 }
 .logo {
 	margin-top: 10px;
+	font-size: 40px;
 }
 .back-btn-margin{
 	margin-top: -5px;
@@ -60,6 +63,10 @@ header {
 }
 .main-btn-margin{
 	margin: 35px auto;
+	border-top: thin solid;
+	border-bottom: thin solid;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .rightbar {
 	height: 77vh;
@@ -110,7 +117,7 @@ h1 {
 }
 
 footer {
-	position: absolute;
+	position: relative;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -122,12 +129,12 @@ footer {
 
 
 .bigpic {
-	width: 420px;
-	padding: 50px 20px 20px 20px;
+	width: 500px;
+	padding: 70px 20px 10px 20px;
 }
 
 .smallpic {
-	width: 180px;
+	width: 110px;
 	display: inline-block;
 	padding: 14px;
 }
@@ -138,7 +145,7 @@ footer {
   display: block;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 200px;
+  height: 120px;
   white-space: nowrap;
 }
 
