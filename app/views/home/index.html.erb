@@ -1,22 +1,13 @@
-<head>
+<h1>#WYNNING</h1>
 
-<link rel="stylesheet" type="text/css" href="index.css">
 
-</head>
-<header>#WYNING</header>
-<body>
-
-<div class="inbtncontainer">
-<div class="btncontainer">
-<% %w{miamitech wyncode miami}.each do |tag| %>
-  <%= link_to(hashtag_path(tag), :class => "button") do %>
-    <button class="btn btn-blue btn-fill-horz-o mainbtn">
-      #<%= tag %>
-    </button>
+<div class="btn-wrapper">
+  <% %w{miamitech wyncode emerge15}.each do |tag| %>
+    <%= link_to(hashtag_path(tag), :class => "button") do %>
+      <button class="btn btn-blue btn-fill-horz-o index-btn">
+        #<%= tag %>
+      </button>
+    <% end %>
   <% end %>
-
-<% end %>
-
 </div>
-</div>
-</body>
+

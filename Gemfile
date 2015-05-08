@@ -53,3 +53,5 @@ gem 'rest-client', '~> 1.8.0'
 gem 'better_errors', '~> 2.1.1'
 
 gem 'rails_12factor', group: :production
+
+gem 'nprogress-rails'

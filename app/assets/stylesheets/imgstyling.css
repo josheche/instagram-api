@@ -25,25 +25,25 @@ header {
 	height: 70vh;
 	width: 90%;
 	text-align: center;
-	margin-top: 0px; 
+	margin-top: 0px;
 }
 
 .container {
-		width: 100%;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 55px;
 }
 
 /*everything here is part of the left bar that displays hashtags*/
 .leftbar {
-		/*background-color: blue;
-*/		height: 100vh;
-		width: 30vw;
-		float: left;
-		margin-left: 120px;
-		position: fixed;
+	height: 95vh;
+	width: 30vw;
+	float: left;
+	margin-left: 120px;
+	position: fixed;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 }
 
 .rightbar {
@@ -55,9 +55,8 @@ header {
 	/*	padding: 50px;*/
 }
 .addresstop {
-	margin-top: 5%;
-	padding-top: 20%;
-	border-top: thin solid; 
+	padding-top: 10%;
+	border-top: thin solid;
 }
 .addressbottom {
 	margin-bottom: 5%;
@@ -93,8 +92,8 @@ footer {
 
 
 .bigpic {
-	width: 612.5px;
-	padding: 60px 20px 20px 20px;
+	width: 420px;
+	padding: 50px 20px 20px 20px;
 }
 
 .smallpic {
@@ -111,7 +110,34 @@ footer {
   overflow-y: hidden;
   height: 200px;
   white-space: nowrap;
+}
+#navigation {
+position: fixed;
+top: 0;
+width: 100%;
+color: #ffffff;
+height: 35px;
+text-align: center;
+padding-top: 15px;
+/* Adds shadow to the bottom of the bar */
+-webkit-box-shadow: 0px 0px 8px 0px #000000;
+-moz-box-shadow: 0px 0px 8px 0px #000000;
+box-shadow: 0px 0px 8px 0px #000000;
+/* Adds the transparent background */
+background-color: rgba(1, 1, 1, 0.8);
+color: rgba(1, 1, 1, 0.8);
+}
 
+#navigation a {
+font-size: 14px;
+padding-left: 15px;
+padding-right: 15px;
+color: white;
+text-decoration: none;
+}
+
+#navigation a:hover {
+color: gray;
 }
 
 /*This is the end of the left hashtag bar*/

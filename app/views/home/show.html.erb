@@ -1,40 +1,35 @@
-  <div class="container">
-    <div class="leftbar">
-      <div class="addresstop"></div>
-      <h1 class="searchtag">#<%= params[:tag] %></h1>
-      <p class="suptag">#WYNCODE</p>
-      <p class="suptag">#EMERGE15</p>
-      <p class="suptag">#OTHERHASHTAG</p>
-      <p class="suptag">#OTHERHASHTAG</p>
-      <p class="suptag">#OTHERHASHTAG</p>
-      <div class="addressbottom"></div>
-    
-    </div>
-    <div class="rightbar">
+<div class="container">
+  <div class="leftbar">
+    <div class="addresstop"></div>
+    <h1 class="searchtag">#<%= params[:tag] %></h1>
+    <p class="suptag">#WYNCODE</p>
+    <p class="suptag">#EMERGE15</p>
+    <p class="suptag">#OTHERHASHTAG</p>
+    <p class="suptag">#OTHERHASHTAG</p>
+    <p class="suptag">#OTHERHASHTAG</p>
+    <div class="addressbottom"></div>
 
+  </div>
+  <div class="rightbar">
 
-      <!--  <img class="bigpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" > -->
-      
-        <%= image_tag @first_image_url, class: 'bigpic', id: "main_image" %>
+    <%= image_tag @first_image_url, class: 'bigpic', id: "main_image" %>
 
-        <%= video_tag "", hidden: true, class: 'bigpic', id: 'main_vid', controls: true %>
-      
+    <%= video_tag "", hidden: true, class: 'bigpic', id: 'main_vid', controls: true %>
 
-       <div class="smallbar">
-        <% @medias.each do |media| %>
+    <div class="smallbar">
+      <% @medias.each do |media| %>
 
-          <% if media['type'] == 'video' %>
-            <video class="smallpic" controls>
-              <source src="<%= media['videos']['standard_resolution']['url'] %>">
-            </video>
-          <% else %>
-            <%= image_tag media['images']['standard_resolution']['url'], class: 'smallpic' %>
-          <% end %>
+      <% if media['type'] == 'video' %>
+        <video class="smallpic" controls>
+          <source src="<%= media['videos']['standard_resolution']['url'] %>">
+        </video>
+        <% else %>
+          <%= image_tag media['images']['standard_resolution']['url'], class: 'smallpic' %>
         <% end %>
-
-      </div>
+      <% end %>
     </div>
   </div>
+</div>
 
 
 

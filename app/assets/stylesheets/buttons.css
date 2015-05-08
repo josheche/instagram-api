@@ -12,7 +12,6 @@ button {
   border: 0;
   cursor: pointer;
 }
-
 .mainbtn {
   display: inline-block;
   line-height: 10vh;
@@ -21,14 +20,7 @@ button {
   opacity: .999;
   border-radius: 3px;
   min-width: 350px;
-
 }
-
-.animate, .btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after, .btn-border-rev-o:before, .btn-border-rev-o:after, .btn-border-rev:before, .btn-border-rev:after, .btn-fill-vert-o:before, .btn-fill-vert-o:after, .btn-fill-vert:before, .btn-fill-vert:after, .btn-fill-horz-o:before, .btn-fill-horz-o:after, .btn-fill-horz:before, .btn-fill-horz:after {
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
-}
-
 .smlbtn {
   display: inline-block;
   line-height: 35px;
@@ -50,6 +42,31 @@ button {
   opacity: .999;
   border-radius: 3px;
   text-transform: uppercase;
+}
+.index-btn {
+  text-transform: uppercase;
+}
+
+.animate, .btn, .back-btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after, .btn-border-rev-o:before, .btn-border-rev-o:after, .btn-border-rev:before, .btn-border-rev:after, .btn-fill-vert-o:before, .btn-fill-vert-o:after, .btn-fill-vert:before, .btn-fill-vert:after, .btn-fill-horz-o:before, .btn-fill-horz-o:after, .btn-fill-horz:before, .btn-fill-horz:after {
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.wrapper{
+  text-align: center;
+}
+.back-btn {
+  display: inline-block;
+  line-height: 35px;
+  margin: 8px;
+  padding: 0 40px;
+  font-size: 15px;
+  position: relative;
+  opacity: .999;
+  border-radius: 3px;
+}
+.btn-wrapper {
+  margin: 0px auto;
+  width: 673px;
 }
 .btn-fill-horz-o {
   background-color: transparent;

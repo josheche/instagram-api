@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'home/data', as: :data
+  get 'process/tag'
+
+  get 'process/next'
+
+  get 'data' => 'home#data', as: :data
 
   get 'home/:tag' => 'home#show', as: :hashtag
 
@@ -11,6 +15,11 @@ Rails.application.routes.draw do
   # get 'home/emerge15'
 
   root 'home#index'
+
+  scope 'process' do
+    post 'tag' => 'process#tag', as: :tag
+    get 'next/:next_id' => 'process#next', as: :next
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
