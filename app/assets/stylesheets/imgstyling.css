@@ -5,6 +5,9 @@
 body {
 	margin:0 auto;
   font-family: 'Rajdhani', sans-serif;
+	padding-right: 30px;
+	padding-left: 30px;
+
 }
 
 header {
@@ -19,6 +22,10 @@ header {
 	margin-top: -25px;
   font-size: 72px;
   font-weight: bold;
+	margin-top: 10px;
+	font-size: 40px;
+	border-bottom: thin solid;
+
 }
 .back-btn-margin{
 	margin-top: -5px;
@@ -54,7 +61,7 @@ header {
   height: 78vh;
   width: 30vw;
   float: left;
-  margin-left: 120px;
+  margin-left: 60px;
   margin-top: 10px;
   position: fixed;
   border-bottom: 1px solid;
@@ -62,6 +69,10 @@ header {
 }
 .main-btn-margin{
 	margin: 35px auto;
+	border-top: thin solid;
+	border-bottom: thin solid;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .rightbar {
 	height: 77vh;
@@ -77,29 +88,33 @@ header {
 }
 .suptag {
 	text-align: center;
-	font-size: .65em;
+	font-size: 1em;
 	font-style: italic;
-
+	text-transform: uppercase;
+	text-decoration: line-through;
 }
 
 .suptag2 {
 	text-align: center;
-	font-size: .45em;
+	font-size: .7em;
 	font-style: italic;
-
+	text-transform: uppercase;
+	text-decoration: line-through;
 }
 .suptag3 {
 	text-align: center;
-	font-size: .25em;
+	font-size: .5em;
 	font-style: italic;
-
+	text-transform: uppercase;
+	text-decoration: line-through;
 }
 
 .suptag4 {
 	text-align: center;
-	font-size: .15em;
+	font-size: .3em;
 	font-style: italic;
-
+	text-transform: uppercase;
+	text-decoration: line-through;
 }
 
 h1 {
@@ -111,7 +126,7 @@ h1 {
 }
 
 footer {
-	position: absolute;
+	position: relative;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -123,12 +138,12 @@ footer {
 
 
 .bigpic {
-	width: 420px;
-	padding: 50px 20px 20px 20px;
+	width: 500px;
+	padding: 70px 20px 10px 20px;
 }
 
 .smallpic {
-	width: 180px;
+	width: 110px;
 	display: inline-block;
 	padding: 14px;
 }
@@ -139,7 +154,7 @@ footer {
   display: block;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 200px;
+  height: 120px;
   white-space: nowrap;
 }
 
