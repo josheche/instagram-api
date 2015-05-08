@@ -52,8 +52,8 @@ button {
 }
 
 .animate, .btn, .back-btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after, .btn-border-rev-o:before, .btn-border-rev-o:after, .btn-border-rev:before, .btn-border-rev:after, .btn-fill-vert-o:before, .btn-fill-vert-o:after, .btn-fill-vert:before, .btn-fill-vert:after, .btn-fill-horz-o:before, .btn-fill-horz-o:after, .btn-fill-horz:before, .btn-fill-horz:after {
-  -webkit-transition: all 1s;
-          transition: all 1s;
+  -webkit-transition: all 1.7s;
+          transition: all 1.7s;
 }
 .wrapper{
   text-align: center;
