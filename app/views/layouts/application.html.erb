@@ -5,22 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-<!--   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
 <header>
-<%= form_tag tag_path do %>
-  <%= text_field_tag(:tag) %>
-<% end %>
-
-<div class="wrapper">
-  <%= link_to root_path, :class => "button" do %>
-    <button class="back-btn btn-blue btn-fill-horz-o">
-      <%= "BACK" %>
-    </button>
-  <% end %>
-</div>
+  <div class="navbar-fixed-top container-fluid">
+    <%= form_tag tag_path, class: 'pull-right' do %>
+      <%= text_field_tag(:tag) %>
+    <% end %>
+    <span class="pull-left">
+        <%= link_to root_path, :class => "button" do %>
+          <button class="back-btn btn-blue btn-fill-horz-o">
+            <%= "BACK" %>
+          </button>
+        <% end %>
+    </span>
+    <div>
+      #WYNNING
+    </div>
+  </div>
 </header>
+
 <%= yield %>
 
 </body>

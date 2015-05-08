@@ -9,8 +9,9 @@ body {
 
 header {
 	width: 100vw;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
+	padding-bottom: 40px;
 }
 .inbtncontainer {
 	padding-top: 90px;
@@ -29,7 +30,7 @@ header {
 }
 
 .container {
-	width: 100%;
+		width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	text-align: center;
@@ -37,13 +38,14 @@ header {
 
 /*everything here is part of the left bar that displays hashtags*/
 .leftbar {
-	height: 95vh;
+	height: 75vh;
 	width: 30vw;
 	float: left;
 	margin-left: 120px;
+	margin-top: 68px;
 	position: fixed;
-	border-top: 1px solid;
 	border-bottom: 1px solid;
+	border-top: 1px solid;
 }
 
 .rightbar {
@@ -53,16 +55,6 @@ header {
 		display: inline-block;
 		float: right;
 	/*	padding: 50px;*/
-}
-.addresstop {
-	padding-top: 10%;
-	border-top: thin solid;
-}
-.addressbottom {
-	margin-bottom: 5%;
-	padding-top: auto;
-	padding-bottom: 75%;
-	border-bottom: thin solid;
 }
 
 .searchtag {
@@ -74,7 +66,27 @@ header {
 }
 .suptag {
 	text-align: center;
+	font-size: .65em;
+	font-style: italic;
+
+}
+
+.suptag2 {
+	text-align: center;
+	font-size: .45em;
+	font-style: italic;
+
+}
+.suptag3 {
+	text-align: center;
 	font-size: .25em;
+	font-style: italic;
+
+}
+
+.suptag4 {
+	text-align: center;
+	font-size: .15em;
 	font-style: italic;
 
 }
@@ -111,34 +123,7 @@ footer {
   height: 200px;
   white-space: nowrap;
 }
-#navigation {
-position: fixed;
-top: 0;
-width: 100%;
-color: #ffffff;
-height: 35px;
-text-align: center;
-padding-top: 15px;
-/* Adds shadow to the bottom of the bar */
--webkit-box-shadow: 0px 0px 8px 0px #000000;
--moz-box-shadow: 0px 0px 8px 0px #000000;
-box-shadow: 0px 0px 8px 0px #000000;
-/* Adds the transparent background */
-background-color: rgba(1, 1, 1, 0.8);
-color: rgba(1, 1, 1, 0.8);
-}
 
-#navigation a {
-font-size: 14px;
-padding-left: 15px;
-padding-right: 15px;
-color: white;
-text-decoration: none;
-}
-
-#navigation a:hover {
-color: gray;
-}
 
 /*This is the end of the left hashtag bar*/
 
