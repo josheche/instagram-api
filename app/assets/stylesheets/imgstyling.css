@@ -157,6 +157,11 @@ footer {
   height: 120px;
   white-space: nowrap;
 }
+.icon-right{
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 12px;
+}
 
 
 /*This is the end of the left hashtag bar*/
