@@ -27,7 +27,7 @@ class HomeController < ApplicationController
   #   @emerge_tag = JSON.parse(@emerge_tag)
   # end
   def data
-    @response = RestClient.get "https://api.instagram.com/v1/tags/#{params[:tag]}/media/recent?client_id=2efdf3b1eb284e4588d2ce7fad2c0f0c"
+    @response = RestClient.get "https://api.instagram.com/v1/tags/miamitech/media/recent?client_id=2efdf3b1eb284e4588d2ce7fad2c0f0c"
     @tags = JSON.parse(@response)
   end
 end

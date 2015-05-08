@@ -1,40 +1,36 @@
-  <div class="container">
-    <div class="leftbar">
-      <div class="addresstop"></div>
-      <h1 class="searchtag">#<%= params[:tag] %></h1>
-      <p class="suptag">#WYNCODE</p>
-      <p class="suptag">#EMERGE15</p>
-      <p class="suptag">#OTHERHASHTAG</p>
-      <p class="suptag">#OTHERHASHTAG</p>
-      <p class="suptag">#OTHERHASHTAG</p>
-      <div class="addressbottom"></div>
-    
-    </div>
-    <div class="rightbar">
+<h2>#<%= params[:tag] %></h2>
+
+<div class="rightbar">
+  <%= image_tag @first_image_url, class: 'bigpic', id: "main_image" %>
+
+  <%= video_tag "", hidden: true, class: 'bigpic', id: 'main_vid', controls: true %>
 
 
-      <!--  <img class="bigpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" > -->
-      
-        <%= image_tag @first_image_url, class: 'bigpic', id: "main_image" %>
+  <div class="smallbar">
+    <% @medias.each do |media| %>
 
-        <%= video_tag "", hidden: true, class: 'bigpic', id: 'main_vid', controls: true %>
-      
-
-       <div class="smallbar">
-        <% @medias.each do |media| %>
-
-          <% if media['type'] == 'video' %>
-            <video class="smallpic" controls>
-              <source src="<%= media['videos']['standard_resolution']['url'] %>">
-            </video>
-          <% else %>
-            <%= image_tag media['images']['standard_resolution']['url'], class: 'smallpic' %>
-          <% end %>
-        <% end %>
-
-      </div>
-    </div>
+      <% if media['type'] == 'video' %>
+        <video class="smallpic" controls>
+          <source src="<%= media['videos']['standard_resolution']['url'] %>">
+        </video>
+      <% else %>
+        <%= image_tag media['images']['standard_resolution']['url'], class: 'smallpic' %>
+      <% end %>
+    <% end %>
   </div>
+
+  <div class="smallbar">
+    <% @tags['data'].each do |result| %>
+      <% if result['type'] == ['video'] %>
+        <video controls>
+          <source src="<%= result['videos']['standard_resolution']['url'] %>">
+        </video>
+      <% else %>
+        <img class="smallpic" src="<%= result['images']['standard_resolution']['url'] %>">
+      <% end %>
+    <% end %>
+  </div>
+</div>
 
 
 
