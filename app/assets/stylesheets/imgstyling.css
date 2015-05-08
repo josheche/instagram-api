@@ -20,8 +20,8 @@ header {
 }
 .logo {
   font-weight: bold;
-  margin-top: -2px;
-  font-size: 40px;
+  margin-top: -20px;
+  font-size: 72px;
   padding-bottom: 17px;
   border-bottom: thin solid;
 
@@ -64,11 +64,9 @@ header {
   margin-top: 20px;
   position: fixed;
   border-bottom: 1px solid;
-  border-top: 1px solid;
 }
 .main-btn-margin{
 	margin: 35px auto;
-	border-top: thin solid;
 	border-bottom: thin solid;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -156,7 +154,7 @@ footer {
 }
 .icon-right{
   position: absolute;
-  margin-left: 350px;
+  margin-left: 410px;
   margin-top: 12px;
 }
 
