@@ -20,7 +20,11 @@
 
 
       <!--  <img class="bigpic" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/11208104_1598354590413910_33488604_n.jpg" > -->
-      <%= image_tag @first_image_url, class: 'bigpic' %>
+      
+        <%= image_tag @first_image_url, class: 'bigpic', id: "main_image" %>
+
+        <%= video_tag "", hidden: true, class: 'bigpic', id: 'main_vid', controls: true %>
+      
 
        <div class="smallbar">
         <% @medias.each do |media| %>
