@@ -62,7 +62,7 @@ header {
 	margin: 35px auto;
 }
 .rightbar {
-	height: 80vh;
+	height: 77vh;
 	width: 60vw;
 	float: right;
 	margin-top: -28px;
@@ -111,8 +111,13 @@ h1 {
 }
 
 footer {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
 	text-align:center;
-	position: relative;
+	color: #B8B8B8;
 }
 
 
