@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>#WYNNING</title>
+  <title>#WYNING</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-<!--   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
-<%= form_tag tag_path do %>
-  <%= text_field_tag(:tag) %>
-<% end %>
-
-<div class="wrapper">
+<div class="left-btn-wrapper">
   <%= link_to root_path, :class => "button" do %>
     <button class="back-btn btn-blue btn-fill-horz-o">
       <%= "BACK" %>
     </button>
   <% end %>
-</div>
+  </div>
+
+<h1>#WYNING</h1>
+
 </header>
+<div class="rt-btn-wrapper"><%= form_tag tag_path do %>
+  <%= text_field_tag(:tag) %>
+<% end %>
+</div>
 <%= yield %>
 
 </body>

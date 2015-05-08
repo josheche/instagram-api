@@ -1,3 +1,7 @@
+#form {
+  width: 70px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +57,7 @@ button {
 }
 .wrapper{
   text-align: center;
+  display: inline-block;
 }
 .back-btn {
   display: inline-block;
@@ -64,10 +69,21 @@ button {
   opacity: .999;
   border-radius: 3px;
 }
-.btn-wrapper {
+.left-btn-wrapper {
   margin: 0px auto;
-  width: 673px;
+  width: 150px;
+  display: inline-block;
+  float: left;
+  position: relative;
 }
+
+.rt-btn-wrapper {
+ /* margin-left: 80vw;*/
+  margin-bottom: 50px;
+  width: 150px;
+  display: inline-block;
+  float right;
+  }
 .btn-fill-horz-o {
   background-color: transparent;
   border: 1px solid #d0d0d0;

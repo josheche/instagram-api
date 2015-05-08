@@ -8,12 +8,12 @@ body {
 }
 
 header {
-	width: 100vw;
+	width: 80vw;
 	font-size: 40px;
-	text-align: center;
+	margin: 0;
 }
 .inbtncontainer {
-	padding-top: 90px;
+	padding-top: 65px;
 	margin: 0 auto;
 	border-bottom: thin solid;
 	border-top: thin solid;
@@ -22,7 +22,7 @@ header {
 }
 .btncontainer {
 	margin: 0 auto;
-	height: 70vh;
+	height: 65vh;
 	width: 90%;
 	text-align: center;
 	margin-top: 0px;
@@ -50,7 +50,6 @@ header {
 		/*background-color: red;*/
 		height: 93vh;
 		width: 60vw;
-		display: inline-block;
 		float: right;
 	/*	padding: 50px;*/
 }
@@ -82,6 +81,9 @@ header {
 h1 {
 	letter-spacing: 10px;
 	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 50px;
 }
 
 footer {
