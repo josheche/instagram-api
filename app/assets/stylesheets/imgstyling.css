@@ -49,14 +49,15 @@ header {
 
 /*everything here is part of the left bar that displays hashtags*/
 .leftbar {
-	height: 77vh;
-	width: 30vw;
-	float: left;
-	margin-left: 120px;
-	margin-top: 23px;
-	position: fixed;
-	border-bottom: 1px solid;
-	border-top: 1px solid;
+  height: 78vh;
+  width: 30vw;
+  float: left;
+  margin-left: 120px;
+  margin-top: 10px;
+  position: fixed;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
 }
 .main-btn-margin{
 	margin: 35px auto;
