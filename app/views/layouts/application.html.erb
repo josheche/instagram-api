@@ -8,8 +8,7 @@
 <!--   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
-
-
+<header>
 <%= form_tag tag_path do %>
   <%= text_field_tag(:tag) %>
 <% end %>
@@ -21,6 +20,7 @@
     </button>
   <% end %>
 </div>
+</header>
 <%= yield %>
 
 </body>
