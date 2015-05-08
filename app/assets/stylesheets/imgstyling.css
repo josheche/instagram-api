@@ -82,8 +82,8 @@ header {
 .searchtag {
   text-align: center;
   padding-bottom: 17px;
-  padding-top: 160px;
-  font-size: 35px;
+  padding-top: 250px;
+  font-size: 45px;
   font-weight: bold;
 }
 .suptag {
@@ -91,7 +91,6 @@ header {
 	font-size: 1em;
 	font-style: italic;
 	text-transform: uppercase;
-	text-decoration: line-through;
 }
 
 .suptag2 {
@@ -99,14 +98,12 @@ header {
 	font-size: .7em;
 	font-style: italic;
 	text-transform: uppercase;
-	text-decoration: line-through;
 }
 .suptag3 {
 	text-align: center;
 	font-size: .5em;
 	font-style: italic;
 	text-transform: uppercase;
-	text-decoration: line-through;
 }
 
 .suptag4 {
@@ -114,7 +111,6 @@ header {
 	font-size: .3em;
 	font-style: italic;
 	text-transform: uppercase;
-	text-decoration: line-through;
 }
 
 h1 {
@@ -139,11 +135,12 @@ footer {
 
 .bigpic {
 	width: 500px;
-	padding: 70px 20px 10px 20px;
+	padding: 70px 20px 30px 20px;
 }
 
 .smallpic {
-	width: 110px;
+	height: 180px;
+	width: 180px;
 	display: inline-block;
 	padding: 14px;
 }
@@ -154,7 +151,7 @@ footer {
   display: block;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 120px;
+  height: 200px;
   white-space: nowrap;
 }
 .icon-right{
