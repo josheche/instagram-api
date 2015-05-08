@@ -80,7 +80,7 @@ button {
   margin-bottom: 50px;
   width: 150px;
   display: inline-block;
-  float right;
+  float: right;
   }
 .btn-fill-horz-o {
   background-color: transparent;
