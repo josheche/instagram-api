@@ -5,12 +5,13 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Rajdhani:700,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani:700,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
 <div class ="cf">
   <div class="navbar-fixed-top container-fluid srch">
+    <span class="glyphicon glyphicon-search icon-right" aria-hidden="true"></span>
     <%= form_tag tag_path, :placeholder => "placeholder text", class: 'pull-right' do %>
       <%= text_field_tag(:tag) %>
     <% end %>
