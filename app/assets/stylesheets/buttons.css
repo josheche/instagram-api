@@ -13,19 +13,43 @@ button {
   cursor: pointer;
 }
 
-.animate, .btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after, .btn-border-rev-o:before, .btn-border-rev-o:after, .btn-border-rev:before, .btn-border-rev:after, .btn-fill-vert-o:before, .btn-fill-vert-o:after, .btn-fill-vert:before, .btn-fill-vert:after, .btn-fill-horz-o:before, .btn-fill-horz-o:after, .btn-fill-horz:before, .btn-fill-horz:after {
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+.mainbtn {
+  display: inline-block;
+  line-height: 10vh;
+  padding: 2vh 2vw -2vh 2vw;
+  font-size: 60px;
+  opacity: .999;
+  border-radius: 3px;
+  min-width: 350px;
+
 }
-.btn {
+
+.animate, .btn, .btn-border-o:before, .btn-border-o:after, .btn-border:before, .btn-border:after, .btn-border-rev-o:before, .btn-border-rev-o:after, .btn-border-rev:before, .btn-border-rev:after, .btn-fill-vert-o:before, .btn-fill-vert-o:after, .btn-fill-vert:before, .btn-fill-vert:after, .btn-fill-horz-o:before, .btn-fill-horz-o:after, .btn-fill-horz:before, .btn-fill-horz:after {
+  -webkit-transition: all 0.8s;
+          transition: all 0.8s;
+}
+
+.smlbtn {
   display: inline-block;
   line-height: 35px;
-  margin: 8px;
-  padding: 0 15px;
-  font-size: 15px;
+  font-size: 15;
+  opacity: .70;
+  border-radius: 3px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  line-height: 50vh;
+  margin: 10px;
+  margin-right: 1vw;
+  padding: 2vh 2vw 2vh 2vw;
+  font-size: 50px;
   position: relative;
   opacity: .999;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 .btn-fill-horz-o {
   background-color: transparent;
