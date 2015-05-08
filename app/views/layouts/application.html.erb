@@ -11,9 +11,8 @@
 <header>
 <div class ="cf">
   <div class="navbar-fixed-top container-fluid srch">
-    <span class="glyphicon glyphicon-search icon-right" aria-hidden="true"></span>
-    <%= form_tag tag_path, :placeholder => "placeholder text", class: 'pull-right' do %>
-      <%= text_field_tag(:tag) %>
+    <%= form_tag tag_path, class: 'pull-right' do %>
+      <%= text_field_tag :tag %>
     <% end %>
     <span class="pull-left back-btn-margin">
         <%= link_to root_path, :class => "button" do %>
