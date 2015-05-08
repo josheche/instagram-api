@@ -11,7 +11,18 @@ header {
 	width: 100vw;
 	font-size: 30px;
 	text-align: center;
+	margin-top: 45px;
 	padding-bottom: 40px;
+	height: 60px;
+}
+.logo {
+	margin-top: 10px;
+}
+.back-btn-margin{
+	margin-top: -5px;
+}
+.srch {
+	margin-top: 10px;
 }
 .inbtncontainer {
 	padding-top: 65px;
@@ -38,23 +49,24 @@ header {
 
 /*everything here is part of the left bar that displays hashtags*/
 .leftbar {
-	height: 75vh;
+	height: 77vh;
 	width: 30vw;
 	float: left;
 	margin-left: 120px;
-	margin-top: 68px;
+	margin-top: 23px;
 	position: fixed;
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 }
-
-.rightbar {
-		/*background-color: red;*/
-		height: 93vh;
-		width: 60vw;
-		float: right;
-	/*	padding: 50px;*/
+.main-btn-margin{
+	margin: 35px auto;
 }
+.rightbar {
+	height: 80vh;
+	width: 60vw;
+	float: right;
+	margin-top: -28px;
+	}
 
 .searchtag {
 	text-align: center;

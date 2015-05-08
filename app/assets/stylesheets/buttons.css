@@ -61,12 +61,12 @@ button {
 }
 .back-btn {
   display: inline-block;
-  line-height: 35px;
-  margin: 8px;
-  padding: 0 40px;
+  line-height: 49px;
+  margin: 5px;
+  padding: 0px 129px;
   font-size: 15px;
   position: relative;
-  opacity: .999;
+  opacity: 0.999;
   border-radius: 3px;
 }
 .btn-wrapper {
