@@ -1,10 +1,10 @@
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(hilton-sans);
+    font-family: 'Rajdhani', sans-serif;
 }
 body {
 	margin:0 auto;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header {
@@ -16,7 +16,9 @@ header {
 	height: 60px;
 }
 .logo {
-	margin-top: 10px;
+	margin-top: -25px;
+  font-size: 72px;
+  font-weight: bold;
 }
 .back-btn-margin{
 	margin-top: -5px;
