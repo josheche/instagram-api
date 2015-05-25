@@ -1,6 +1,6 @@
 class InstagramAPI
 	def initialize(tag)
-		response = RestClient.get "https://api.instagram.com/v1/tags/#{tag}/media/recent?client_id=2efdf3b1eb284e4588d2ce7fad2c0f0c"
+		response = RestClient.get "https://api.instagram.com/v1/tags/#{tag}/media/recent?client_id=INSERT-CLIENT-ID-HERE"
 		@data = JSON.parse(response)
 	end
 
